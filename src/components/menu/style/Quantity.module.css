@@ -1,0 +1,27 @@
+.quantity {
+  width: 130px;
+  height: 37px;
+  border-radius: 100px;
+  background-color: var(--red);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--rose-100);
+}
+
+.button {
+  background-color: transparent;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  border: 1.5px solid var(--rose-100);
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+.button img {
+  display: block;
+}

@@ -1,0 +1,15 @@
+.app {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .app {
+    grid-template-columns: 0.67fr 0.33fr;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 60px;
+  }
+}

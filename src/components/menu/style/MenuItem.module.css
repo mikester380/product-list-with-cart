@@ -1,0 +1,39 @@
+.pic {
+  display: block;
+  overflow: clip;
+  border-radius: 10px;
+}
+
+.pic img {
+  display: block;
+  width: 100%;
+}
+
+.details {
+  display: grid;
+  gap: 4px;
+}
+
+.category {
+  font-size: 0.875rem;
+  color: var(--rose-400);
+}
+
+.name {
+  color: var(--rose-900);
+  font-weight: 600;
+}
+
+.price {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.action {
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+.selected_item {
+  outline: 2px solid var(--red);
+}

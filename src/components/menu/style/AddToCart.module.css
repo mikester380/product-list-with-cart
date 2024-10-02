@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  border: 2px solid var(--rose-600);
+  background-color: white;
+  width: 130px;
+  height: 37px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--rose-900);
+}
+
+.icon {
+  width: 18px;
+}

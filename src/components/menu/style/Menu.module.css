@@ -1,0 +1,22 @@
+.title {
+  color: var(--rose-900);
+  margin-bottom: 30px;
+}
+
+.items {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .items {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
