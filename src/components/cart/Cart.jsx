@@ -7,18 +7,14 @@ import ConfirmedModal from './ConfirmedModal'
 import Button from '../button'
 
 function Cart() {
-  const { items, setItems, totalItems, totalPrice } =
-    useCart()
+  const { items, setItems, totalItems, totalPrice } = useCart()
 
-  const [confirmedOrder, setConfirmedOrder] =
-    useState(false)
+  const [confirmedOrder, setConfirmedOrder] = useState(false)
 
   const isEmpty = !items.length
 
   function takeOutOfCart(itemName) {
-    const itemIndex = items.findIndex(
-      (item) => item.name === itemName
-    )
+    const itemIndex = items.findIndex((item) => item.name === itemName)
 
     const newItems = [...items]
 
@@ -50,9 +46,7 @@ function Cart() {
           </div>
           <div className={s.total}>
             <p>Order Total</p>
-            <p className={s.bill}>
-              ${totalPrice.toFixed(2)}
-            </p>
+            <p className={s.bill}>${totalPrice.toFixed(2)}</p>
           </div>
           <div className={s.neutral}>
             <img
@@ -60,19 +54,13 @@ function Cart() {
               alt=""
             />
             <span>
-              This is a{' '}
-              <span className={s.bold}>carbon-neutral</span>{' '}
-              delivery
+              This is a <span className={s.bold}>carbon-neutral</span> delivery
             </span>
           </div>
           <ConfirmedModal
             opened={confirmedOrder}
             hideModal={() => setConfirmedOrder(false)}
-            openButton={
-              <Button onClick={confirmOrder}>
-                Confirm Order
-              </Button>
-            }
+            openButton={<Button onClick={confirmOrder}>Confirm Order</Button>}
           />
         </>
       ) : (

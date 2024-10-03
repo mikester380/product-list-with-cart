@@ -8,7 +8,6 @@ function Item({ item }) {
   const { items, setItems } = useCart()
 
   const refInCart = items.find((el) => el.name === item.name)
-
   const isInCart = !!refInCart
   const quantityInCart = refInCart?.quantity || 0
 
@@ -20,9 +19,9 @@ function Item({ item }) {
     } = item
 
     items.push({
+      quantity: 1,
       name,
       price,
-      quantity: 1,
       thumbnail,
     })
 
