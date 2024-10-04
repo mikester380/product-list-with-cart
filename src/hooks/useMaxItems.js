@@ -10,13 +10,14 @@ function useMaxItems(ref, max) {
 
     function work() {
       const shouldProceed = numOfItems > max
-
       if (!shouldProceed) return
 
       const targets = items.slice(0, max)
       let height
 
-      if (max === 1) height = getRect(targets[0]).height
+      if (max === 1) {
+        height = getRect(targets[0]).height
+      }
 
       if (max > 1) {
         const bottomOfItem1 = getRect(targets[0]).bottom

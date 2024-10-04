@@ -7,10 +7,8 @@ import ConfirmedModal from './ConfirmedModal'
 import Button from '../button'
 
 function Cart() {
-  const { items, setItems, totalItems, totalPrice } = useCart()
-
   const [confirmedOrder, setConfirmedOrder] = useState(false)
-
+  const { items, setItems, totalItems, totalPrice } = useCart()
   const isEmpty = !items.length
 
   function takeOutOfCart(itemName) {
